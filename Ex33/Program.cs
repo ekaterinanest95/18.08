@@ -15,7 +15,7 @@ Console.WriteLine($"[{String.Join("; ", array)}]");*/
 
 
 
-Console.Write("Введите число: ");
+/*Console.Write("Введите число: ");
 int Number = Convert.ToInt32(Console.ReadLine());
 int size = 15;
 int min = 1;
@@ -56,4 +56,33 @@ PrintArray(array);
 if (FindNumber(array, Number)) Result = "присутствует";
 System.Console.WriteLine($"Число {Number} {Result} в массиве");
 System.Console.WriteLine();
+*/
+
+
+Console.Write("Введите число: ");
+int Number = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[10];
+
+
+for(int i = 0; i < array.Length; i++)
+{
+    array[i] = new Random().Next(-10,20);
+}
+
+Console.WriteLine($"[{String.Join("; ", array)}]");
+
+
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i] == Number) Console.WriteLine("Да");
+    else Console.WriteLine("Нет");
+    break;
+}
+    
+
+
+
+
+
+
 
